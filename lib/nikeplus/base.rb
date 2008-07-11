@@ -53,7 +53,7 @@ module NikePlus
       end
       xml_response = nil
       http.start do |sess|
-        xml_response = REXML::Document.new(sess.get(uri.request_uri).body)
+        xml_response = sess.get(uri.request_uri).body
       end
 
       resp = REXML::Document.new(xml_response)
