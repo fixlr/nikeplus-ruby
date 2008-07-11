@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plusService>
+    <status>success</status>
+    <runList>
+        <run id="1" workoutType="standard">
+            <startTime>2008-05-17T16:27:33-04:00</startTime>
+            <distance>4.1564</distance>
+            <duration>2558375</duration>
+            <syncTime>2008-05-17T21:12:13+00:00</syncTime>
+            <calories>409</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="2" workoutType="standard">
+            <startTime>2008-05-18T10:35:27-04:00</startTime>
+            <distance>3.364</distance>
+            <duration>1488174</duration>
+            <syncTime>2008-05-19T11:54:22+00:00</syncTime>
+            <calories>331</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="3" workoutType="standard">
+            <startTime>2008-05-20T17:33:56-04:00</startTime>
+            <distance>3.8563</distance>
+            <duration>1893539</duration>
+            <syncTime>2008-05-21T12:40:49+00:00</syncTime>
+            <calories>380</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="4" workoutType="standard">
+            <startTime>2008-05-25T18:43:24-04:00</startTime>
+            <distance>3.7046</distance>
+            <duration>1883634</duration>
+            <syncTime>2008-05-27T18:41:01+00:00</syncTime>
+            <calories>365</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="5" workoutType="standard">
+            <startTime>2008-06-19T17:13:39-04:00</startTime>
+            <distance>4.543</distance>
+            <duration>2249197</duration>
+            <syncTime>2008-06-27T12:27:36+00:00</syncTime>
+            <calories>447</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="6" workoutType="standard">
+            <startTime>2008-06-23T18:22:28-04:00</startTime>
+            <distance>3.8601</distance>
+            <duration>1908108</duration>
+            <syncTime>2008-06-27T12:27:37+00:00</syncTime>
+            <calories>380</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="7" workoutType="standard">
+            <startTime>2008-06-28T15:13:20-04:00</startTime>
+            <distance>3.7046</distance>
+            <duration>1772049</duration>
+            <syncTime>2008-07-01T11:38:07+00:00</syncTime>
+            <calories>365</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="8" workoutType="standard">
+            <startTime>2008-07-05T13:23:13-04:00</startTime>
+            <distance>4.2834</distance>
+            <duration>2143332</duration>
+            <syncTime>2008-07-06T21:48:08+00:00</syncTime>
+            <calories>422</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="9" workoutType="standard">
+            <startTime>2008-07-08T19:15:32-04:00</startTime>
+            <distance>3.8801</distance>
+            <duration>1831085</duration>
+            <syncTime>2008-07-10T22:42:30+00:00</syncTime>
+            <calories>382</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+        <run id="10" workoutType="standard">
+            <startTime>2008-07-10T18:57:39-04:00</startTime>
+            <distance>4.5511</distance>
+            <duration>2136862</duration>
+            <syncTime>2008-07-10T23:39:39+00:00</syncTime>
+            <calories>440</calories>
+            <name><![CDATA[]]></name>
+            <description><![CDATA[]]></description>
+        </run>
+    </runList>
+</plusService>
