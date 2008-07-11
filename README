@@ -1,0 +1,5 @@
+== NikePlus-ruby
+Ruby implementation of the unofficial NikePlus API.  
+
+Loosely based on the NikePlus PHP implementation by 
+Rasmus Lerdorf (http://lerdorf.com/php/nikeplus.phps)
