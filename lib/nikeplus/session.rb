@@ -12,15 +12,16 @@ module NikePlus
     end
     
     def authenticate(login, password)
-      response = send_request(AUTH_URL, 'login', {:login=>login, :password=>password, :locale=>'en&5FUS'})
+      response = send_request(AUTH_URL, {:action => 'login', :login=>login, :password=>password, :locale=>'en&5FUS'})
       @cookie  = response.set_cookie
-      @profile = NikePlus::Profile.new(response.body.root.elements["profile"])
+      @profile = NikePlus::Profile.new(response.fetch("profile"))
     end
     
-    def send_request(endpoint, action, options = {})
-      uri  = parse(endpoint, options.merge(:action => action))
+    def send_request(endpoint, options = {})
+      uri  = URI.parse("#{endpoint}#{parse_opts(options)}")
+      params = @cookie.nil? ? [uri.request_uri] : [uri.request_uri, {'Cookie' => @cookie}]
       resp = http(uri).start do |sess|
-        NikePlus::HttpResponse.new(sess.get(uri.request_uri))
+        NikePlus::HttpResponse.new(sess.get(*params))
       end
     
       if resp.success?
@@ -31,8 +32,8 @@ module NikePlus
     end
     
     private
-    def parse(endpoint, options)
-      URI.parse("#{endpoint}?#{options.collect{|k,v| "#{k}=#{CGI.escape(v.to_s)}"}.join('&')}")
+    def parse_opts(options)
+      options.length > 0 ? "?#{options.collect{|k,v| "#{k}=#{CGI.escape(v.to_s)}"}.join('&')}" : ""
     end
 
     def http(uri)

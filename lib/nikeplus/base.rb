@@ -23,5 +23,9 @@ module NikePlus
     def whoami
       @session.profile.login
     end
+    
+    def runs
+      @runs ||= RunList.new(@session)
+    end
   end
 end
