@@ -1,8 +1,9 @@
 require 'net/http'
 require 'net/https'
 require 'uri'
-require 'rexml'
+require 'rexml/document'
+require 'cgi'
 
-%w{base}.each do |file|
+%w{base session http_response profile}.each do |file|
   require File.join(File.dirname(__FILE__), 'nikeplus', file)
 end
