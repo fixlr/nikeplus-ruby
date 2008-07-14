@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<plusService>
-    <status>failure</status>
-    <serviceException errorCode="RequestParametersError">no id parameter in request</serviceException>
-</plusService>
