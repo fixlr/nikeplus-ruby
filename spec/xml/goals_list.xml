@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plusService>
+    <status>success</status>
+    <goalList>
+        <goal id="2468">
+            <complete>false</complete>
+            <level>01</level>
+            <startTime>2008-07-05T17:12:30+00:00</startTime>
+            <endTime>2008-08-03T03:59:59+00:00</endTime>
+            <definition>
+                <type>runMoreOften</type>
+                <numberOfRuns>8</numberOfRuns>
+                <totalProgress>3</totalProgress>
+            </definition>
+        </goal>
+    </goalList>
+    <goalResolutionList/>
+</plusService>
