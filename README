@@ -1,5 +1,10 @@
 == NikePlus-ruby
-Ruby implementation of the unofficial NikePlus API.  
+Ruby implementation of the unofficial NikePlus web API.  
 
-Loosely based on the NikePlus PHP implementation by 
-Rasmus Lerdorf (http://lerdorf.com/php/nikeplus.phps)
+I've been frustrated with the nikeplus.com flash site lately and decided to 
+take a stab at writing a ruby interface for the web API described in the
+NikePlus PHP implementation by Rasmus Lerdorf and the Perl implementation
+of WWW::Nike::NikePlus.
+
+If you have any suggestions or requests, please feel free to fork or just send 
+a message.  "We are all learning, getting smarter every day."
