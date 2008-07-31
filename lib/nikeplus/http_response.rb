@@ -1,12 +1,12 @@
 module NikePlus
   class HttpResponse
-    attr_reader :set_cookie, :body
+    attr_reader :cookie, :body
 
     RESP_SUCCESS = 'success'
     RESP_FAILURE = 'failure'
     
     def initialize(response)
-      @set_cookie = response.fetch('set-cookie') rescue IndexError
+      @cookie = response.fetch('set-cookie') rescue IndexError
       @body = REXML::Document.new(response.body)
     end
 

@@ -13,7 +13,7 @@ module NikePlus
     
     def authenticate(login, password)
       response = send_request(AUTH_URL, {:action => 'login', :login=>login, :password=>password, :locale=>'en&5FUS'})
-      @cookie  = response.set_cookie
+      @cookie  = response.cookie
       @profile = NikePlus::Profile.new(response.fetch("profile"))
     end
     
