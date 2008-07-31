@@ -21,10 +21,6 @@ module NikePlus
       @runs = nil
     end
     
-    def whoami
-      @session.profile.login
-    end
-    
     def runs
       @runs ||= fetch_runs_list
     end
