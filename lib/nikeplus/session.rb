@@ -2,7 +2,8 @@ module NikePlus
   class Session
     attr_reader :profile
 
-    # TODO:  Need a better way to handle the https for authentication
+    # TODO:  Need a better way to handle the https for authentication than
+    # this stupid hard coded path...
     RootCA = '/usr/share/curl/curl-ca-bundle.crt'
     AUTH_URL = 'https://secure-nikeplus.nike.com/services/profileService'
 

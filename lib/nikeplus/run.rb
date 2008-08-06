@@ -9,8 +9,24 @@ module NikePlus
       end
     end
 
-    def duration
-      @duration.to_i
+    def distance=(s)
+      @distance = s.to_i
+    end
+
+    def duration=(s)
+      @duration = s.to_i
+    end
+
+    def minutes
+      @duration/60000
+    end
+
+    def seconds
+      @duration % 60000 / 1000
+    end
+
+    def miles
+      "%.2f" % (@distance/0.621371192)
     end
   end
 end
