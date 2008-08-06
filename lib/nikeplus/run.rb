@@ -8,5 +8,9 @@ module NikePlus
         send("#{e.name}=", e.text)
       end
     end
+
+    def duration
+      @duration.to_i
+    end
   end
 end
