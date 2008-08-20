@@ -10,7 +10,7 @@ module NikePlus
     end
 
     def distance=(s)
-      @distance = s.to_i
+      @distance = s.to_f
     end
 
     def duration=(s)
@@ -26,7 +26,7 @@ module NikePlus
     end
 
     def miles
-      "%.2f" % (@distance/0.621371192)
+      "%.2f" % (@distance * 0.621371192)
     end
   end
 end
