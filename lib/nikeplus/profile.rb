@@ -1,6 +1,6 @@
 module NikePlus
   class Profile < Base
-    attr_accessor :id, :firstName, :lastName, :email, :locale, :userType,
+    attr_accessor :id, :firstName, :lastName, :email, :locale, :userType, :screenName,
         :login, :receiveEmail, :gender, :passwordQuestion, :passwordAnswer,
         :registrationSiteId, :temporaryPassword, :dobMonth, :dobDay, :dobYear,
         :mobileNumber, :mobileCarrier, :mobileScreenName,
