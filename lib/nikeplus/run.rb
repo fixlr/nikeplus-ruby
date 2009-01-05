@@ -7,6 +7,10 @@ module NikePlus
       run.each_element_with_text do |e|
         send("#{e.name}=", e.text)
       end
+      
+      %W{workoutType id}.each do |e|
+        send("#{e}=", run.attributes[e])
+      end
     end
 
     def distance=(s)
