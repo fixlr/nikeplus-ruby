@@ -7,9 +7,18 @@ module NikePlus
     RootCA = '/usr/share/curl/curl-ca-bundle.crt'
     AUTH_URL = 'https://secure-nikeplus.nike.com/services/profileService'
 
-    def initialize
+    def initialize(login, password)
       @cookie = nil
       @profile = nil
+      @runs = nil
+      @login = login
+      @password = password
+      
+      authenticate(@login, @password)
+    end
+    
+    def runs
+      @runs ||= fetch_runs_list
     end
     
     def authenticate(login, password)
@@ -49,6 +58,16 @@ module NikePlus
         end
       end
       http
+    end
+  
+    def fetch_runs_list
+      list = []
+      response = send_request(Base::RUNS_LIST_URL)
+      
+      response.fetch('runList').each_element_with_text do |run_xml|
+        list << NikePlus::Run.new(run_xml)
+      end
+      list
     end
   end
 end
