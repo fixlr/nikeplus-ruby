@@ -45,8 +45,8 @@ describe "NikePlus::HttpResponse" do
   private
   def create_response(xml_file)
     raw_response = mock("RawResponse")
-    raw_response.should_receive(:fetch).with('set-cookie').and_return("COOKIE")
-    raw_response.should_receive(:body).and_return(File.read(File.dirname(__FILE__) + "/../xml/#{xml_file}"))
+    raw_response.expects(:fetch).with('set-cookie').returns("COOKIE")
+    raw_response.expects(:body).returns(File.read(File.dirname(__FILE__) + "/../xml/#{xml_file}"))
     
     NikePlus::HttpResponse.new(raw_response)
   end
