@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-describe "NikePlus::RunFeed" do
+describe "NikePlus::Feed" do
   
   it "should get runs from xml feed" do
     mock_response = mock("response")
@@ -13,7 +13,7 @@ describe "NikePlus::RunFeed" do
     
     NikePlus::Run.expects(:new).times(10)
     
-    run_feed = NikePlus::RunFeed.new(060606)
+    run_feed = NikePlus::Feed.new(060606)
     run_feed.runs
   end
 end

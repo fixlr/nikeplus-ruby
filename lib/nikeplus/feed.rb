@@ -1,5 +1,5 @@
 module NikePlus
-  class RunFeed
+  class Feed
     XML_BASE_URL = 'http://nikeplus.nike.com/nikeplus/v1/services/widget/get_public_run_list.jsp?userID='
     
     def initialize(uid)
